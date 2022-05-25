@@ -1,40 +1,41 @@
 // Function: date objesinden yılı eğer 2000 üstünde ise milenyum yılı yoksa milenyum değil yazdırsın
-// keyword:if-else ,new Date()
-// function dateMilenium() {
-//   console.log((new Date().getFullYear() >= 2000) ? "Milenyum(+)" : "Milenyum(-)")
-// }
-// dateMilenium()
+// keyword:if-else ,
+new Date()
+function dateMilenium() {
+  console.log((new Date().getFullYear() >= 2000) ? "Milenyum(+)" : "Milenyum(-)")
+}
+dateMilenium()
 /////////////////////////////////////////////////////////////////
 // Örnek-1
 // y=3x+4k ==> 1.dereceden 2 bilinmeyenli denklem
 // Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
 // Çözüm:
 // ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-// let sayi1= Number(prompt("Lütfen 1.Sayı"))
-// let sayi2=Number(prompt("Lütfen 2.Sayı"))
-// let result = Birincdedenklem(sayi1,sayi2)
-//   document.write(result)
-// function Birincdedenklem(sayi1,sayi2){
-//   return (3* sayi1) + (4 * sayi2)
-// }
+let sayi1= Number(prompt("Lütfen 1.Sayı"))
+let sayi2=Number(prompt("Lütfen 2.Sayı"))
+let result = Birincdedenklem(sayi1,sayi2)
+  document.write(result)
+function Birincdedenklem(sayi1,sayi2){
+  return (3* sayi1) + (4 * sayi2)
+}
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 // Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
 // Çözüm:
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 
-// let degree = Number(prompt("Dereceyi Giriniz"))
-// document.write(fah(degree))
-// function fah(degree) {
-//   return (degree * 9 / 5) + 32
-// }
+let degree = Number(prompt("Dereceyi Giriniz"))
+document.write(fah(degree))
+function fah(degree) {
+  return (degree * 9 / 5) + 32
+}
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 
 // örnek-3 operatör
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 // 4+3*2(3:3-1*6+9:1+(3:3)) hesaplayalım
-// 4 + 3 * 2 * (3 / 3 - 1 * 6 + 9 / 1 + (3 / 3))
-// var opera= 4 + 3 * 2 * (3 / 3 - 1 * 6 + 9 / 1 + (3 / 3));
-// console.log(opera);
+4 + 3 * 2 * (3 / 3 - 1 * 6 + 9 / 1 + (3 / 3))
+var opera= 4 + 3 * 2 * (3 / 3 - 1 * 6 + 9 / 1 + (3 / 3));
+console.log(opera);
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 
 // örnek-4 Math
@@ -104,21 +105,20 @@ else{
 // bu sayılardan kaç tane çift sayı var
 // bu sayıların toplamı
 // // Çözüm
-// var sayi = 5;
-// var sayiAdeti = 0, ciftSayi = 0, tekSayi = 0, toplam = 0, ortalama = 0;
-//  1 2  3 4 5
-// for (var i = 1; i <= sayi; i++) {
-//   sayiAdeti++;
-//   if (i % 2 == 0) {
-//     ciftSayi++;
-//   } else {
-//     tekSayi++;
-//   }
-//   toplam += i;
-// }
-// ortalama = toplam / sayiAdeti;
-// document.write("kaçtane sayı: " + sayiAdeti + " kaç tane tek sayı: " + tekSayi + " kaç tane çift sayı: " + ciftSayi)
-// document.write(" toplam: " + toplam + " ortalaması:" + ortalama)
+var sayi = 5;
+var sayiAdeti = 0, ciftSayi = 0, tekSayi = 0, toplam = 0, ortalama = 0;
+for (var i = 1; i <= sayi; i++) {
+  sayiAdeti++;
+  if (i % 2 == 0) {
+    ciftSayi++;
+  } else {
+    tekSayi++;
+  }
+  toplam += i;
+}
+ortalama = toplam / sayiAdeti;
+document.write("kaçtane sayı: " + sayiAdeti + " kaç tane tek sayı: " + tekSayi + " kaç tane çift sayı: " + ciftSayi)
+document.write(" toplam: " + toplam + " ortalaması:" + ortalama)
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 // Soru: kullanıcı tarafından girilen iki değişkenin birbirine eşit olup olmadığını bulan algoritma
 
@@ -137,19 +137,19 @@ else{
         }
      equalornot()
     
-// function deneme() {
-//   while (true) {
-//     var password = prompt("lütfen şifre giriniz");
-//     var rePassword = prompt("lütfen şifreyi tekrar giriniz");
-//     if (password === rePassword) {
-//       document.write("teşekkürler aynı şifre");
-//       break;
-//     } else {
-//       document.write("farklı şifre tekrar giriniz");
-//     }
-//   }
-// }
-// deneme()
+function deneme() {
+  while (true) {
+    var password = prompt("lütfen şifre giriniz");
+    var rePassword = prompt("lütfen şifreyi tekrar giriniz");
+    if (password === rePassword) {
+      document.write("teşekkürler aynı şifre");
+      break;
+    } else {
+      document.write("farklı şifre tekrar giriniz");
+    }
+  }
+}
+deneme()
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 // Date objesinden haftanın hangi gün olduğunu bulan algoritma ?
   let today = new Date().getDay();
